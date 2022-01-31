@@ -12,7 +12,7 @@ export default function Card(props) {
     <div className="card">
       {badgeText && <div className="card--badge">{badgeText}</div>}
       <img
-        src={`../images/${props.item.coverImg}`}
+        src={`./airbnb_react_static/public/images/${props.item.coverImg}`}
         className="card--image"
         alt="Component portrayal"
       />
