@@ -12,12 +12,16 @@ export default function Card(props) {
     <div className="card">
       {badgeText && <div className="card--badge">{badgeText}</div>}
       <img
-        src={`../images/${props.item.coverImg}`}
+        src={process.env.PUBLIC_URL + `/images/${props.item.coverImg}`}
         className="card--image"
         alt="Component portrayal"
       />
       <div className="card--stats">
-        <img src="../images/star.png" className="card--star" alt="Star" />
+        <img
+          src={process.env.PUBLIC_URL + "/images/star.png"}
+          className="card--star"
+          alt="Star"
+        />
         <span>{props.item.stats.rating}</span>
         <span className="gray">({props.item.stats.reviewCount}) •</span>
         <span className="gray">{props.item.location}</span>

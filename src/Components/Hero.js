@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <img
-        src="../images/photo-grid.jpg"
+        src={process.env.PUBLIC_URL + "/images/photo-grid.jpg"}
         className="hero--photo"
         alt="People on phones"
       />
